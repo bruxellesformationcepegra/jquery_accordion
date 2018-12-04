@@ -1,0 +1,34 @@
+body {
+    font-family: 'Slabo 27px', serif;
+    font-weight: normal;
+    padding:50px;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#303cad;
+}
+.accordion {
+    &-pannel {
+        border-bottom:1px solid #efefef;
+        .fas {
+            transition:.3s all ease-in-out;
+        }
+        &.active {
+            .fas {
+                transform:rotate(180deg);
+            }
+        }
+        &__title {
+            a {
+                display: flex;
+                justify-content:space-between;
+            }
+        }
+        &__bodytxt {
+            font-size: 12px;
+            display: none;
+            margin-bottom:15px;
+        }
+    }
+}
